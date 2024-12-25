@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// Connection string
+// MongoDB connection string
 const MONG_URI = 'mongodb://localhost:27017/BooksData';
 
 // Connect to MongoDB
@@ -8,7 +8,7 @@ mongoose.connect(MONG_URI, { useUnifiedTopology: true, useNewUrlParser: true, us
 
 const db = mongoose.connection;
 
-// Handle connection events
+// Connection events
 db.on('error', (err) => {
     console.log('Error occurred: ' + err);
 });

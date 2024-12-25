@@ -9,5 +9,5 @@ const BookSchema = new mongoose.Schema({
     format: String
 });
 
-// Create and export the model
+// Export the model
 module.exports = mongoose.model('bookmodel', BookSchema, 'BookCollection');
